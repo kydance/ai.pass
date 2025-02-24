@@ -4,6 +4,7 @@ const openChatGPTWindowButton0 = document.getElementById('openChatGPT0');
 const openGoogleBardoWindowButton = document.getElementById('openGoogleBard');
 const openClaudeButton = document.getElementById('openclaude');
 const openPoeButton = document.getElementById('openPoe');
+const openGrokButton = document.getElementById('openGrok');
 
 openClaudeButton.addEventListener('click', async () => {
   chrome.tabs.create({ url: 'https://claude.ai/chats' });
@@ -20,6 +21,10 @@ openGoogleBardoWindowButton.addEventListener('click', async () => {
 
 openPoeButton.addEventListener('click', async () => {
   chrome.tabs.create({ url: 'https://www.coze.com/' });
+});
+
+openGrokButton.addEventListener('click', async () => {
+  chrome.tabs.create({ url: 'https://grok.com/' });
 });
 
 async function openIncognitoWindow() {

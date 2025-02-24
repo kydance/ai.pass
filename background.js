@@ -7,8 +7,8 @@
 let proxyEnabled = true;
 const proxyServer = {
   scheme: 'http',
-  host: 'PROXY_CONFIG_HOST', // string
-  port: PROXY_CONFIG_PORT // integer
+  host: '9.135.153.55',
+  port: 10800
 };
 
 // 需要代理的AI网站列表
@@ -20,7 +20,8 @@ const AI_SITES = [
   "https://claude.ai/*",
   "https://anthropic.com/*",
   "https://*.oaistatic.com",
-  "https://*.oaiusercontent.com"
+  "https://*.oaiusercontent.com",
+  "https://grok.com/*"
 ];
 
 /**

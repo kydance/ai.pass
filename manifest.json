@@ -43,7 +43,8 @@
         "https://www.anthropic.com/*",
         "https://claude.ai/*",
         "https://chatgpt.com/*",
-        "https://*.coze.com/*"
+        "https://*.coze.com/*",
+        "https://grok.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_end"
@@ -61,7 +62,8 @@
     "https://www.anthropic.com/*",
     "https://*.oaistatic.com/*",
     "https://*.coze.com/*",
-    "https://claude.ai/*"
+    "https://claude.ai/*",
+    "https://grok.com/*"
   ],
   "web_accessible_resources": [
     {
@@ -72,7 +74,8 @@
         "https://www.anthropic.com/*",
         "https://claude.ai/*",
         "https://chatgpt.com/*",
-        "https://*.coze.com/*"
+        "https://*.coze.com/*",
+        "https://grok.com/*"
       ]
     }
   ]
