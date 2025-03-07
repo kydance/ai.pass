@@ -20,6 +20,12 @@
       display: inline-block !important;
       margin: 0;
     }
+    .proxy-enabled {
+        background-color: rgba(40, 167, 69, 0.1);
+        border-radius: 8px;
+        transition: background-color 0.3s ease;
+      }
+
     #toggleProxy {
         width: 50%;
         margin: 0 20%;
@@ -39,18 +45,18 @@
     <div class="wrapper"  id="codeA">
         <h2>ai.pass</h2><span> &nbsp;v1.0</span>
 
-        <!-- <div class="form-check form-switch switch">
+        <div class="form-check form-switch switch">
           <input class="form-check-input form-control-lg" type="checkbox" role="switch" id="toggleProxy">
-        </div> -->
-    
+        </div>
+
         <br>
         <div class="btn-group-vertical btn-group-lg mt-2 mb-1" role="group">
-          <button id="openChatGPT0" class="btn btn-success btn-block action-button">ChatGPT</button>
-          <button id="openGoogleBard" class="btn btn-warning btn-block action-button">Google gemini</button>
-          <button id="openclaude" class="btn btn-info btn-block action-button">Claude</button>
-          <button id="openPoe" class="btn btn-link btn-block action-button">Coze</button>
-          <button id="openGrok" class="btn btn-link btn-block action-button">Grok</button>
           <button id="openIncognitoWindow" class="btn btn-danger btn-block action-button">进入无痕模式</button>
+          <button id="openclaude" class="btn btn-info btn-block action-button">Claude</button>
+          <button id="openGoogleBard" class="btn btn-warning btn-block action-button">Google gemini</button>
+          <button id="openChatGPT0" class="btn btn-success btn-block action-button">ChatGPT</button>
+          <button id="openPoe" class="btn btn-link btn-block action-button">Coze</button>
+          <button id="openGrok" class="btn btn-secondary btn-block action-button">Grok</button>
         </div>
     </div>
     

@@ -73,3 +73,24 @@ async function openIncognitoWindow() {
 }
 
 openIncognitoWindowButton.addEventListener('click', openIncognitoWindow);
+
+// 初始化代理开关状态
+chrome.storage.local.get(['proxyEnabled'], (result) => {
+  const enabled = result.proxyEnabled ?? true; // 默认启用
+  toggleProxyButton.checked = enabled;
+  updateProxyStatus(enabled);
+});
+
+// 监听代理开关变化
+toggleProxyButton.addEventListener('change', async (event) => {
+  const enabled = event.target.checked;
+  await chrome.storage.local.set({ proxyEnabled: enabled });
+  chrome.runtime.sendMessage({ action: 'toggleProxy', enabled });
+  updateProxyStatus(enabled);
+});
+
+// 更新代理状态UI
+function updateProxyStatus(enabled) {
+  toggleProxyButton.title = enabled ? '代理已启用' : '代理已禁用';
+  document.querySelector('.wrapper').classList.toggle('proxy-enabled', enabled);
+}

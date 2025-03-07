@@ -94,9 +94,23 @@ chrome.runtime.onInstalled.addListener(() => {
 });
 
 // 监听扩展启动事件
-chrome.runtime.onStartup.addListener(() => {
-  updateProxySettings();
+chrome.runtime.onStartup.addListener(async () => {
+  const result = await chrome.storage.local.get(['proxyEnabled']);
+  const enabled = result.proxyEnabled ?? true; // 默认启用
+  toggleProxy(enabled);
   console.log('扩展已启动，初始化代理设置');
+});
+
+// 监听来自popup的消息
+chrome.runtime.onMessage.addListener((message, sender, sendResponse) => {
+  if (message.action === 'toggleProxy') {
+    toggleProxy(message.enabled);
+  }
+});
+
+// 监听代理错误
+chrome.proxy.onProxyError.addListener((details) => {
+  console.error('代理错误:', details);
 });
 
 // 初始化代理设置
