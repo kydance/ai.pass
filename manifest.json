@@ -44,7 +44,8 @@
         "https://claude.ai/*",
         "https://chatgpt.com/*",
         "https://*.coze.com/*",
-        "https://grok.com/*"
+        "https://grok.com/*",
+        "https://learning.google.com/*"
       ],
       "js": ["content.js"],
       "run_at": "document_end"
@@ -63,7 +64,8 @@
     "https://*.oaistatic.com/*",
     "https://*.coze.com/*",
     "https://claude.ai/*",
-    "https://grok.com/*"
+    "https://grok.com/*",
+    "https://learning.google.com/*"
   ],
   "web_accessible_resources": [
     {
@@ -75,7 +77,8 @@
         "https://claude.ai/*",
         "https://chatgpt.com/*",
         "https://*.coze.com/*",
-        "https://grok.com/*"
+        "https://grok.com/*",
+        "https://learning.google.com/*"
       ]
     }
   ]

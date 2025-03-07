@@ -21,7 +21,8 @@ const AI_SITES = [
   "https://anthropic.com/*",
   "https://*.oaistatic.com",
   "https://*.oaiusercontent.com",
-  "https://grok.com/*"
+  "https://grok.com/*",
+  "https://learning.google.com/*",
 ];
 
 /**

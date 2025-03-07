@@ -9,6 +9,8 @@
   - Google Gemini
   - Anthropic Claude
   - Coze
+  - Grok
+  - Learn About
 - 智能代理路由
 - 一键快速访问
 - 轻量级设计
