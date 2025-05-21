@@ -23,6 +23,7 @@ const AI_SITES = [
   "https://*.oaiusercontent.com",
   "https://grok.com/*",
   "https://learning.google.com/*",
+  "https://jules.google.com/*"
 ];
 
 /**
